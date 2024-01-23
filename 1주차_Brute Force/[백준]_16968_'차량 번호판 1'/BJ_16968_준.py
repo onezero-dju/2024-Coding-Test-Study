@@ -9,10 +9,17 @@ Comment
 3. d -> d : 10 * 9
 4. d -> c -> d : 10 * 26 * 10
 
+Imporvment
+- DFS로 구현
+
 """
 
+# input (번호판 형식)
 car_num = input()
 
+# 고려해야 하는 경우의 수는 4가지
+## c로 시작 -> c or d
+## d로 시작 -> d or c
 def typeCD(car_num):
     output_num = 1
     for count in range(len(car_num)):
