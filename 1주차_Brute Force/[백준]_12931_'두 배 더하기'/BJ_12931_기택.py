@@ -7,7 +7,6 @@ def is_end(B: list[int]):
     if set(B) == {0}:
         return True
     else:
-        
         return False
 
 calc_cnt = 0
