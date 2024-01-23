@@ -9,7 +9,7 @@ public class BJ_12931 {
         int[] B = new int[N];
 
         for(int i=0; i<N; i++){
-            B[i] = sc.nextInt(); // 배열 B의 원소를 입력 받기.
+            B[i] = sc.nextInt(); // 배열 B의 원소를 입력 받기..
         }
 
         int cnt = calculateMinimumOperations(B); // 배열 A를 B로 변환하는 데 필요한 최소 연산 횟수를 계산.
