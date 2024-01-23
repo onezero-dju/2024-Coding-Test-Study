@@ -1,5 +1,7 @@
+import sys
+
 A = int(input())
-B = [int(i) for i in input().split()]
+B = list(map(int, sys.stdin.readline().strip().split()))
 
 def is_end(B: list[int]):
     if set(B) == {0}:
@@ -16,17 +18,22 @@ def make_all_even(B: list[int]):
             calc_cnt += 1
             
 def devide_by_two(B: list[int]):
+    if is_end(B):  #? 꼭 한 번 더 검사해야?
+        return
     global calc_cnt
-    if all(i % 2 == 0 for i in B):
-        for i in range(A):
-            B[i] //= 2
-        calc_cnt += 1
+    for i in range(A):
+        B[i] //= 2
+    calc_cnt += 1
     
 def main(arr: list[int]):
-    while not is_end(arr):
+    if is_end(arr):
+        print(calc_cnt)
+        return
+    else:
         make_all_even(arr)
         devide_by_two(arr)
-    print(calc_cnt)
+        main(arr)  # 재귀
+    
 
 if __name__ == "__main__":
     main(B)
