@@ -17,7 +17,7 @@ public class BJ_2210 {
             }
         }
 
-        //dfs 함수를 사용해 결과 출력
+        //dfs 함수를 사용해 결과 출력.
         for (int i = 0; i < 5; i++) {
             for (int j = 0; j < 5; j++) {
                 dfs(i, j, String.valueOf(map[i][j]));
