@@ -19,7 +19,7 @@ public class BJ_16953 {
         while (true) {
             // a == b
             if (a == b) {
-                // 현재까지의 연산 횟수(cnt)에 1을 더한 값을 출력하고 루프를 종료합니다.
+                // 현재까지의 연산 횟수(cnt)에 1을 더한 값을 출력하고 루프를 종료합니다..
                 System.out.println(cnt + 1);
                 break;
             }
