@@ -29,7 +29,7 @@ public class 백준_2751 {
             writer.write(Integer.toString(numbers[i]) + "\n");
         }
 
-        // BufferedWriter의 경우, 모든 작업을 마친 후에는 반드시 flush()와 close()를 호출해주어야 합니다.
+        // BufferedWriter의 경우, 모든 작업을 마친 후에는 반드시 flush()와 close()를 호출 및 닫기.
         writer.flush();
         writer.close();
         reader.close();
