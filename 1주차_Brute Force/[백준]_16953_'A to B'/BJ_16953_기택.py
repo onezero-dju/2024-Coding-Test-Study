@@ -16,7 +16,7 @@ def temp(num):
     global calc_cnt
     if is_one_at_right_end(num):  # 숫자의 오른쪽 끝이 1로 끝나는지 확인 
         # 1을 빼고 10으로 나눠, 숫자 오른쪽 끝의 1을 제거  #? 문자열로 취급하는 게 낫나?
-        num -= 1
+        # num -= 1
         num //= 10
         calc_cnt += 1
     elif num % 2 == 0:  # 짝수 확인
